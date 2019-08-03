@@ -11,6 +11,7 @@ class VideoGridState extends Cloneable<VideoGridState> {
   }
 }
 
+///数据关联起来
 class VideoGridConnector extends ConnOp<CategoryTabPageState, VideoGridState> {
   @override
   VideoGridState get(CategoryTabPageState state) {

@@ -14,12 +14,14 @@ Widget buildView(
             autofocus: true,
             textInputAction: TextInputAction.search,
             controller: state.controller,
+            ///搜索
             onSubmitted: (text) =>
                 dispatch(SearchPageActionCreator.onFetchAction()),
             decoration: InputDecoration(hintText: "搜索电影/演员/导演")),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
+            ///搜索
             onPressed: () => dispatch(SearchPageActionCreator.onFetchAction()),
           ),
         ],

@@ -6,6 +6,7 @@ import 'package:dogetv_flutter/pages/home_page/reducer.dart';
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
 
+///首页
 class HomePage extends Page<HomePageState, Map<String, dynamic>> {
   HomePage()
       : super(

@@ -5,6 +5,7 @@ enum SearchItemAction { onSelect }
 
 class SearchItemActionCreator {
   static Action onSelect(Video video) {
+    ///传参
     Map<String, dynamic> payload = {"videoId": video.id};
     return Action(SearchItemAction.onSelect, payload: payload);
   }

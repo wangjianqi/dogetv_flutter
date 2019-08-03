@@ -5,6 +5,7 @@ import 'package:dogetv_flutter/widgets/video_cover/widget.dart';
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
 
+///搜索cell
 Widget buildView(Video video, dispatch, ViewService viewService) {
   return GestureDetector(
     onTap: () => dispatch(SearchItemActionCreator.onSelect(video)),
@@ -15,6 +16,7 @@ Widget buildView(Video video, dispatch, ViewService viewService) {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            ///图片：heroId
             VideoCover(path: video.cover, width: 120, heroTag: video.id),
             SizedBox(width: 8),
             Expanded(

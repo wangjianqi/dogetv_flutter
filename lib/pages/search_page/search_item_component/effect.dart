@@ -13,11 +13,13 @@ Effect buildEffect() {
 
 onSelect(Action action, Context ctx) async {
   String videoId = action.payload["videoId"];
+  ///请求数据
   VideoDetail videoDetail = await APIs.getVideo(videoId);
   Map<String, dynamic> payload = {
     "videoId": videoId,
     "videoDetail": videoDetail
   };
+  ///跳转
   Navigator.of(ctx.context).push(MaterialPageRoute(builder: (context) {
     return VideoPage().buildPage(payload);
   }));

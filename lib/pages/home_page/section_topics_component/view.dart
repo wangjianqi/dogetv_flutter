@@ -4,6 +4,7 @@ import 'package:dogetv_flutter/pages/home_page/section_topics_component/action.d
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
 
+///精选专题
 Widget buildView(List<Topic> state, dispatch, ViewService viewService) {
   return Container(
     height: 150,

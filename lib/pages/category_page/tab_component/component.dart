@@ -16,6 +16,7 @@ class CategoryTabPageComponent
           effect: buildEffect(),
           initState: initState,
           reducer: buildReducer(),
+          ///TODO ----
           dependencies: Dependencies<CategoryTabPageState>(slots: {
             "query-panel": QueryPanelConnector() + QueryPanelComponent(),
             "video-grid": VideoGridConnector() + VideoGridComponent(),
