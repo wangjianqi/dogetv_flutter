@@ -20,8 +20,10 @@ void _init(Action action, Context<PlayerPageState> ctx) async {
 
 void _dispose(Action action, Context<PlayerPageState> ctx) async {
   SystemChrome.setPreferredOrientations([
+    ///竖屏
     DeviceOrientation.portraitUp,
   ]).then((_) {
+    ///销毁
     ctx.state.videoController.pause();
     ctx.state.videoController.dispose();
     ctx.state.chewieController.dispose();

@@ -20,6 +20,7 @@ class PlayerListConnector extends ConnOp<PlayerPageState, List<ItemBean>> {
   @override
   List<ItemBean> get(PlayerPageState state) {
     List<ItemBean> items = [];
+    ///播放器
     items.add(ItemBean("player", state));
     if (state.episodes != null && state.episodes.length > 0) {
       items.add(ItemBean("header", {"title": "分集", "subTitle": null}));

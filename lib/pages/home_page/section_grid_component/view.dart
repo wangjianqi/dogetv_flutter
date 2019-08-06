@@ -10,12 +10,14 @@ Widget buildView(List<Video> state, dispatch, ViewService viewService) {
     shrinkWrap: true,
     physics: ClampingScrollPhysics(),
     itemCount: state.length,
+    ///
     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
         childAspectRatio: 0.62,
         mainAxisSpacing: 8.0,
         crossAxisSpacing: 8.0),
     itemBuilder: (BuildContext context, int index) {
+      ///widget
       final video = state[index];
       return GestureDetector(
         onTap: () {

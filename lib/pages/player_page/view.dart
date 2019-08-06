@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 Widget buildView(
     PlayerPageState state, dynamic dispatch, ViewService viewService) {
   final ListAdapter listAdapter = viewService.buildAdapter();
-
+  ///TODO ----屏幕
   return OrientationBuilder(
     builder: (context, orientation) {
       return Scaffold(

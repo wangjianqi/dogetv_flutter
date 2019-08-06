@@ -30,6 +30,7 @@ PlayerPageState initState(Map<String, dynamic> map) {
   state.streamURL = streamURL;
   state.episodes = episodes;
   state.isLive = isLive;
+  ///播放器
   VideoPlayerController videoController =
       VideoPlayerController.network(streamURL);
   ChewieController chewieController = ChewieController(

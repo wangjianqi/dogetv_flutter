@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 Widget buildView(PlayerPageState state, dispatch, ViewService viewService) {
   return Container(
     color: Colors.black,
+    ///TODO ----播放器
     child: Chewie(
       controller: state.chewieController,
     ),
