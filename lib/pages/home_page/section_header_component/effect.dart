@@ -13,6 +13,7 @@ Effect buildEffect() {
 
 onShowMore(Action action, Context ctx) {
   String type = action.payload;
+  ///查看更多
   if (type == "精选专题") {
     Navigator.of(ctx.context).push(MaterialPageRoute(builder: (context) {
       return TopicsPage().buildPage(null);

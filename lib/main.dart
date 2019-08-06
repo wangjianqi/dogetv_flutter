@@ -16,6 +16,7 @@ class DogeTVApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         brightness: Brightness.dark,
       ),
+      ///通过buildPage创建页面
       home: HomePage().buildPage(null),
     );
   }

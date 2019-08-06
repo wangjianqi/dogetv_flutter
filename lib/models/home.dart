@@ -31,6 +31,7 @@ class VideoSection {
   }
 }
 
+///精选专题
 class Topic {
   String title;
   String cover;

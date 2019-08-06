@@ -11,6 +11,7 @@ Effect<TopicDetailPageState> buildEffect() {
 }
 
 void _init(Action action, Context<TopicDetailPageState> ctx) async {
+  ///请求数据
   APIs.getTopicDetail(ctx.state.topic.id).then((topics) {
     ctx.dispatch(TopicDetailPageActionCreator.didLoadAction(topics));
   });

@@ -14,8 +14,8 @@ class HomePage extends Page<HomePageState, Map<String, dynamic>> {
           effect: buildEffect(),
           initState: initState,
           reducer: buildReducer(),
-//          onError: onMessageError,
           dependencies: Dependencies<HomePageState>(
+            ///列表
               adapter: NoneConn<HomePageState>() + MovieGroupAdapter(),
               slots: <String, Dependent<HomePageState>>{}),
         );

@@ -16,6 +16,7 @@ class TopicDetailPageState implements Cloneable<TopicDetailPageState> {
 
 TopicDetailPageState initState(Map<String, dynamic> map) {
   TopicDetailPageState state = TopicDetailPageState();
+  ///接收参数
   state.topic = map["topic"];
   return state;
 }

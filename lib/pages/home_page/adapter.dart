@@ -8,8 +8,13 @@ class MovieGroupAdapter extends DynamicFlowAdapter<HomePageState> {
   MovieGroupAdapter()
       : super(
           pool: <String, Component<Object>>{
+            ///精选专题
             "topic": TopicHorizontalComponent(),
+
+            ///header标题
             "header": SectionHeaderComponent(),
+
+            ///grid
             "grid": SectionGridComponent(),
           },
           connector: HomeMovieListConnector(),
@@ -25,7 +30,10 @@ class HomeMovieListConnector extends ConnOp<HomePageState, List<ItemBean>> {
     }
 
     items.add(ItemBean("header", "精选专题"));
+
+    ///type和data
     items.add(ItemBean("topic", state.home.topics));
+
     for (var section in state.home.sections) {
       items.add(ItemBean("header", section.title));
       items.add(ItemBean("grid", section.items.take(9).toList()));

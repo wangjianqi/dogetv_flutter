@@ -29,18 +29,21 @@ void _onFetch(Action action, Context<HomePageState> ctx) async {
   });
 }
 
+///TV
 void _onShowTV(Action action, Context<HomePageState> ctx) async {
   Navigator.of(ctx.context).push(MaterialPageRoute(builder: (context) {
     return TVPage().buildPage(null);
   }));
 }
 
+///影视库
 void _onShowLibrary(Action action, Context<HomePageState> ctx) async {
   Navigator.of(ctx.context).push(MaterialPageRoute(builder: (context) {
     return CategoryPage().buildPage({"index": 0});
   }));
 }
 
+///搜索
 void _onShowSearch(Action action, Context<HomePageState> ctx) async {
   Navigator.of(ctx.context).push(MaterialPageRoute(builder: (context) {
     return SearchPage().buildPage(action.payload);

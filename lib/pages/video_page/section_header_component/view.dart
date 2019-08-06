@@ -22,6 +22,7 @@ Widget buildView(
             textAlign: TextAlign.left,
           ),
         ),
+        ///TODO ----是否显示
         Visibility(
           visible: subTitle.isNotEmpty,
           child: Text(subTitle),

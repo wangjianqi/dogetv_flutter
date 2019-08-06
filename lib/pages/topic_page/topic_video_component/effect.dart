@@ -12,6 +12,7 @@ Effect buildEffect() {
 }
 
 onSelect(Action action, Context ctx) async {
+  ///获取
   String videoId = action.payload["videoId"];
   VideoDetail videoDetail = await APIs.getVideo(videoId);
   Map<String, dynamic> payload = {
