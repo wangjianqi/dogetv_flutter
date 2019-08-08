@@ -1,4 +1,5 @@
 class QueryOptionSet {
+  ///标题
   String title;
   List<QueryOption> options;
 

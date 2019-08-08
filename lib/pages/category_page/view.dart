@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 Widget buildView(
     CategoryPageState state, dynamic dispatch, ViewService viewService) {
   List<Tab> tabs = state.categories.map((item) => Tab(text: item)).toList();
+
+  ///TODO ----枚举值
   List<Widget> tabContents = Category.values
       .map((category) =>
           CategoryTabPageComponent().buildPage({"category": category}))

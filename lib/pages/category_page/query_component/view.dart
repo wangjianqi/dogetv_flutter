@@ -27,6 +27,7 @@ List<Widget> buildQuerySet(QueryPanelState state, dynamic dispatch) {
                 QueryOption option = querySet.options[index];
                 return GestureDetector(
                   onTap: () {
+                    ///选择
                     dispatch(QueryPanelActionCreator.onSelected(
                         type: querySet.title, index: index));
                     dispatch(CategoryTabPageActionCreator.onUpdateQuery());
@@ -55,6 +56,7 @@ List<Widget> buildQuerySet(QueryPanelState state, dynamic dispatch) {
 }
 
 Widget buildView(QueryPanelState state, dispatch, ViewService viewService) {
+  ///TODO ----sliver
   return SliverFixedExtentList(
     delegate: SliverChildListDelegate(buildQuerySet(state, dispatch)),
     itemExtent: 44,
